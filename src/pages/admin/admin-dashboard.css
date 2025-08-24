@@ -1,0 +1,113 @@
+.admin-dashboard {
+  --bg1: #e8f5e9; /* Light green gradient start */
+  --bg2: #c8e6c9; /* Light green gradient end */
+  --card: #ffffff; /* White card background */
+  --accent: #54ce5a; /* Dark green for admin theme */
+  --text: #1b1b1b;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, var(--bg1), var(--bg2));
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: var(--accent);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.widget-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 widgets per row on desktop */
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 30px;
+}
+
+.widget {
+  background: var(--card);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.widget:hover {
+  transform: translateY(-5px);
+}
+
+.widget h2 {
+  color: var(--accent);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.widget .value {
+  color: var(--text);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.nav-button {
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: var(--accent);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(27, 94, 32, 0.3);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.nav-button:hover {
+  background: #143d17;
+  transform: scale(1.05);
+}
+
+.logout {
+  background: #d32f2f; /* Red for logout button */
+}
+
+.logout:hover {
+  background: #b71c1c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  .widget-grid {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+  .widget {
+    padding: 15px;
+  }
+  .widget h2 {
+    font-size: 1rem;
+  }
+  .widget .value {
+    font-size: 1.2rem;
+  }
+  .nav-button {
+    font-size: 1rem;
+  }
+}
