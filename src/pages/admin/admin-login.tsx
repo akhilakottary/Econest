@@ -7,7 +7,7 @@ const AdminLogin = () => {
 
   const handleLogin = () => {
     // Placeholder for login logic; navigate to Admin Dashboard
-    navigate("/admin/dashboard");
+    navigate("/admin-dashboard");
   };
 
   return (
