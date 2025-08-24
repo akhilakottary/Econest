@@ -1,0 +1,29 @@
+.common-btn {
+  background: var(--accent, #54ce5a); /* Use project theme color, fallback to green */
+  border: none;
+  color: white;
+  padding: 12px 16px; /* Matches viewCart button padding */
+  border-radius: 20px; /* Matches viewCart button radius */
+  font-size: 16px;
+  font-weight: 700; /* Bold, matches viewCart */
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(46, 125, 50, 0.35); /* Matches viewCart shadow */
+  transition: background-color 0.2s ease; /* Optimize transition */
+}
+
+.common-btn:hover {
+  background: #1b5e20; /* Darker green, matches viewCart hover */
+}
+
+.common-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+@media (max-width: 480px) {
+  .common-btn {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+}
