@@ -34,6 +34,7 @@
 .input-group input {
   border: none;
   outline: none;
+  opacity: 100%;
   flex: 1;
   margin-left: 10px;
 }
