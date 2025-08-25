@@ -13,10 +13,15 @@ const Login = () => {
 
     // Dummy check for now (replace later with backend validation)
     if (email === "admin@example.com" && password === "1234") {
-      navigate("/dashboard"); // ✅ Navigate to dashboard
+      navigate("/admin/dashboard"); // ✅ Updated to admin dashboard
     } else {
       alert("Invalid credentials, try again.");
     }
+  };
+
+  const handleForgotPassword = () => {
+    alert("Forgot Password feature coming soon! Please contact support."); // Placeholder
+    // Later, replace with: navigate("/forgot-password");
   };
 
   return (
@@ -48,6 +53,9 @@ const Login = () => {
         <button type="submit" className="login-btn">
           Login
         </button>
+        <a href="#" onClick={handleForgotPassword} className="forgot-password">
+          Forgot Password?
+        </a>
       </form>
     </div>
   );
