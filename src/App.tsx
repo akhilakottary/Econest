@@ -5,6 +5,7 @@ import CartPage from "./pages/user/cartpage";
 import AdminLogin from "./pages/admin/admin-login";
 import AdminDashboard from "./pages/admin/admin-dashboard";
 import PlantManagement from "./pages/admin/plant-management";
+import OrderManagement from "./pages/admin/order-management";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/admin-login" element={<AdminLogin />} />
       <Route path="/admin-dashboard" element={<AdminDashboard />} />
       <Route path="/plant-management" element={<PlantManagement />} />
+      <Route path="/order-management" element={<OrderManagement />} />
 
     </Routes>
   );
