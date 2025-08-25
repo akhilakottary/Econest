@@ -28,7 +28,7 @@ const AdminDashboard = () => {
       </div>
       <div className="nav-buttons">
         <Button
-          onClick={() => handleNavigate("/admin/plant-management")}
+          onClick={() => handleNavigate("/plant-management")}
           ariaLabel="Manage Plants"
           className="nav-button"
         >
@@ -48,13 +48,7 @@ const AdminDashboard = () => {
         >
           User Management
         </Button>
-        <Button
-          onClick={() => handleNavigate("/admin/reports")}
-          ariaLabel="View Reports"
-          className="nav-button"
-        >
-          Reports
-        </Button>
+        
         <Button
           onClick={() => handleNavigate("/admin/login")}
           ariaLabel="Logout"
