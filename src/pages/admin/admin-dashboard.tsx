@@ -41,22 +41,10 @@ const AdminDashboard = () => {
         >
           Order Management
         </Button>
+        {/* Removed User Management button since page is reverted */}
         <Button
-          onClick={() => handleNavigate("/admin/user-management")}
-          ariaLabel="Manage Users"
-          className="nav-button"
-        >
-          User Management
-        </Button>
-        <Button
-          onClick={() => handleNavigate("/admin/reports")}
-          ariaLabel="View Reports"
-          className="nav-button"
-        >
-          Reports
-        </Button>
-        <Button
-          onClick={() => handleNavigate("/admin/login")}
+
+          onClick={() => handleNavigate("/admin-login")}
           ariaLabel="Logout"
           className="nav-button logout"
         >
