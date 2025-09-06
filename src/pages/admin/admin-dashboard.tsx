@@ -42,7 +42,7 @@ const AdminDashboard = () => {
           Order Management
         </Button>
         <Button
-          onClick={() => handleNavigate("/user-management")}
+          onClick={() => handleNavigate("/admin/user-management")}
           ariaLabel="Manage Users"
           className="nav-button"
         >
