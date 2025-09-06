@@ -43,8 +43,8 @@ const AdminDashboard = () => {
         </Button>
         {/* Removed User Management button since page is reverted */}
         <Button
-          onClick={() => handleNavigate("/admin-login")}
 
+          onClick={() => handleNavigate("/admin-login")}
           ariaLabel="Logout"
           className="nav-button logout"
         >
