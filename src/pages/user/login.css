@@ -19,7 +19,7 @@
   padding: 20px;
   border-radius: 10px;
   background: #fff;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .input-group {
@@ -61,3 +61,17 @@
   background: #005fcc;
 }
 
+.forgot-password {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #1890ff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+  color: #005fcc;
+}

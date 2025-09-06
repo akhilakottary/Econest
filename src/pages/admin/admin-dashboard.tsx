@@ -28,14 +28,14 @@ const AdminDashboard = () => {
       </div>
       <div className="nav-buttons">
         <Button
-          onClick={() => handleNavigate("/admin/plant-management")}
+          onClick={() => handleNavigate("/plant-management")}
           ariaLabel="Manage Plants"
           className="nav-button"
         >
           Plant Management
         </Button>
         <Button
-          onClick={() => handleNavigate("/admin/order-management")}
+          onClick={() => handleNavigate("/order-management")}
           ariaLabel="Manage Orders"
           className="nav-button"
         >
@@ -43,8 +43,8 @@ const AdminDashboard = () => {
         </Button>
         {/* Removed User Management button since page is reverted */}
         <Button
-
           onClick={() => handleNavigate("/admin-login")}
+
           ariaLabel="Logout"
           className="nav-button logout"
         >
