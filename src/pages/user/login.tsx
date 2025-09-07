@@ -13,7 +13,7 @@ const Login = () => {
 
     // Dummy check for now (replace later with backend validation)
     if (email === "admin@example.com" && password === "1234") {
-      navigate("/admin/dashboard"); // ✅ Updated to admin dashboard
+      navigate("/dashboard"); // ✅ Updated to admin dashboard
     } else {
       alert("Invalid credentials, try again.");
     }

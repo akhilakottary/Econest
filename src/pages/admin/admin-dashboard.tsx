@@ -45,6 +45,7 @@ const AdminDashboard = () => {
         <Button
 
           onClick={() => handleNavigate("/admin-login")}
+
           ariaLabel="Logout"
           className="nav-button logout"
         >
